@@ -1,0 +1,40 @@
+.boxImg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+  }
+  .boxImg__content {
+      max-width: 80vw;
+      max-height: 80vh;
+      height: 100%;
+    width: 100%;
+    min-height: 330px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 34px 36px;
+  }
+  
+  @media screen and (max-width: 540px) {
+    .boxImg_content {
+      width: calc(100% - 60px);
+    }
+  }
+  
+  .boxImg__close {
+    width: 26px;
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    cursor: pointer;
+  }
+  .boxImg__is-opened{
+    display: flex;
+  }
