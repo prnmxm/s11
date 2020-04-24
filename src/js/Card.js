@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor(popupZoom, userInfo, api) {
     this.popupZoom = popupZoom;
     this.userInfo = userInfo;

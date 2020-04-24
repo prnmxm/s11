@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
   checkInputValidity(event) {
     const error = event.target.closest("label").querySelector(".popup__error");
     const targetState = event.target.validity;

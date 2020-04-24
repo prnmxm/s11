@@ -1,7 +1,7 @@
-class Api {
-    constructor(baseUrl,token) {
-      this.token = token;
-      this.baseUrl = baseUrl;
+export default class Api {
+    constructor(config,) {
+      this.token = config.token;
+      this.baseUrl = config.baseUrl;
     }
     getUserInfo = () =>{
       return fetch(`${this.baseUrl}users/me`, {
