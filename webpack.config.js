@@ -84,7 +84,7 @@ module.exports = {
             },
             {
                 test: /\.(woff|woff2)/,
-                use: ['file-loader']
+                use: 'file-loader?name=./vendor/[name].[ext]'
             }
         ]
     },
