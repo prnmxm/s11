@@ -22,7 +22,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "[name][hash].js"
+        filename: "[name].[hash].js"
     },
     devServer: {
         port: 1337,
@@ -96,5 +96,6 @@ module.exports = {
             filename: 'index.html'
         }),
         new CleanWebpackPlugin(),
+        new WebpackMd5Hash()
     ]
 };
