@@ -1,4 +1,6 @@
-class PopupZoom extends Popup {
+import Popup from './Popup.js';
+
+export default class PopupZoom extends Popup {
   open(e) {
     super.open();
     this.modal.classList.add("boxImg__is-opened");
